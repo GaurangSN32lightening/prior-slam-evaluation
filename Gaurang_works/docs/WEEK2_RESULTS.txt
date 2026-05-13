@@ -1,0 +1,31 @@
+============================================
+WEEK 2 BASELINE EXPERIMENTS - ORB-SLAM3
+Date: December 9, 2024
+============================================
+
+TUM RGB-D Dataset Results:
+
+FR1_DESK:
+  - Keyframes: 113
+  - RMSE ATE: 0.016234 m
+  - Mean ATE: 0.013791 m
+  - Max Error: 0.050881 m
+
+FR2_XYZ:
+  - Keyframes: 60
+  - RMSE ATE: 0.002772 m
+  - Mean ATE: 0.002394 m
+  - Max Error: 0.006354 m
+
+FR3_STRUCTURE_TEXTURE_FAR:
+  - Keyframes: 45
+  - RMSE ATE: 0.010755 m
+  - Mean ATE: 0.009688 m
+  - Max Error: 0.024345 m
+
+Notes:
+- All experiments run with ORB-SLAM3 in Docker
+- Monocular mode (no depth/stereo)
+- Evaluation with evo_ape using Sim(3) alignment
+- Small errors indicate good tracking performance
+- Experiments completed after overcoming build challenges
